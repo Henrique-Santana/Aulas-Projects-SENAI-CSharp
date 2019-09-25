@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\exercicios\aleatorio\bin\Debug\netcoreapp2.2\aleatorio.deps.json
+C:\Users\47651807863\Documents\exercicios\aleatorio\bin\Debug\netcoreapp2.2\aleatorio.runtimeconfig.json
+C:\Users\47651807863\Documents\exercicios\aleatorio\bin\Debug\netcoreapp2.2\aleatorio.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\exercicios\aleatorio\bin\Debug\netcoreapp2.2\aleatorio.dll
+C:\Users\47651807863\Documents\exercicios\aleatorio\bin\Debug\netcoreapp2.2\aleatorio.pdb
+C:\Users\47651807863\Documents\exercicios\aleatorio\obj\Debug\netcoreapp2.2\aleatorio.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\exercicios\aleatorio\obj\Debug\netcoreapp2.2\aleatorio.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\exercicios\aleatorio\obj\Debug\netcoreapp2.2\aleatorio.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\exercicios\aleatorio\obj\Debug\netcoreapp2.2\aleatorio.AssemblyInfo.cs
+C:\Users\47651807863\Documents\exercicios\aleatorio\obj\Debug\netcoreapp2.2\aleatorio.dll
+C:\Users\47651807863\Documents\exercicios\aleatorio\obj\Debug\netcoreapp2.2\aleatorio.pdb

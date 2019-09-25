@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\exercicios\matr\bin\Debug\netcoreapp2.2\matr.deps.json
+C:\Users\47651807863\Documents\exercicios\matr\bin\Debug\netcoreapp2.2\matr.runtimeconfig.json
+C:\Users\47651807863\Documents\exercicios\matr\bin\Debug\netcoreapp2.2\matr.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\exercicios\matr\bin\Debug\netcoreapp2.2\matr.dll
+C:\Users\47651807863\Documents\exercicios\matr\bin\Debug\netcoreapp2.2\matr.pdb
+C:\Users\47651807863\Documents\exercicios\matr\obj\Debug\netcoreapp2.2\matr.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\exercicios\matr\obj\Debug\netcoreapp2.2\matr.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\exercicios\matr\obj\Debug\netcoreapp2.2\matr.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\exercicios\matr\obj\Debug\netcoreapp2.2\matr.AssemblyInfo.cs
+C:\Users\47651807863\Documents\exercicios\matr\obj\Debug\netcoreapp2.2\matr.dll
+C:\Users\47651807863\Documents\exercicios\matr\obj\Debug\netcoreapp2.2\matr.pdb
