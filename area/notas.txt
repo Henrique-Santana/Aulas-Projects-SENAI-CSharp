@@ -1,0 +1,5 @@
+circulo 3,14 . r ao quadrado
+quadrado lado.lado
+triangulo base .altura /2
+ratangulo base . altura
+losangulo entre eixo1 .estre eixo2

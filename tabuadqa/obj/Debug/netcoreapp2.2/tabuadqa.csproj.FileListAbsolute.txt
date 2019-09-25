@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\exercicios\tabuadqa\bin\Debug\netcoreapp2.2\tabuadqa.deps.json
+C:\Users\47651807863\Documents\exercicios\tabuadqa\bin\Debug\netcoreapp2.2\tabuadqa.runtimeconfig.json
+C:\Users\47651807863\Documents\exercicios\tabuadqa\bin\Debug\netcoreapp2.2\tabuadqa.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\exercicios\tabuadqa\bin\Debug\netcoreapp2.2\tabuadqa.dll
+C:\Users\47651807863\Documents\exercicios\tabuadqa\bin\Debug\netcoreapp2.2\tabuadqa.pdb
+C:\Users\47651807863\Documents\exercicios\tabuadqa\obj\Debug\netcoreapp2.2\tabuadqa.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\exercicios\tabuadqa\obj\Debug\netcoreapp2.2\tabuadqa.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\exercicios\tabuadqa\obj\Debug\netcoreapp2.2\tabuadqa.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\exercicios\tabuadqa\obj\Debug\netcoreapp2.2\tabuadqa.AssemblyInfo.cs
+C:\Users\47651807863\Documents\exercicios\tabuadqa\obj\Debug\netcoreapp2.2\tabuadqa.dll
+C:\Users\47651807863\Documents\exercicios\tabuadqa\obj\Debug\netcoreapp2.2\tabuadqa.pdb
