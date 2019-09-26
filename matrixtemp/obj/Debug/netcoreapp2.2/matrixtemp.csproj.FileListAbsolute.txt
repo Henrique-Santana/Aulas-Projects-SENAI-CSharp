@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\exercicios\matrixtemp\bin\Debug\netcoreapp2.2\matrixtemp.deps.json
+C:\Users\47651807863\Documents\exercicios\matrixtemp\bin\Debug\netcoreapp2.2\matrixtemp.runtimeconfig.json
+C:\Users\47651807863\Documents\exercicios\matrixtemp\bin\Debug\netcoreapp2.2\matrixtemp.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\exercicios\matrixtemp\bin\Debug\netcoreapp2.2\matrixtemp.dll
+C:\Users\47651807863\Documents\exercicios\matrixtemp\bin\Debug\netcoreapp2.2\matrixtemp.pdb
+C:\Users\47651807863\Documents\exercicios\matrixtemp\obj\Debug\netcoreapp2.2\matrixtemp.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\exercicios\matrixtemp\obj\Debug\netcoreapp2.2\matrixtemp.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\exercicios\matrixtemp\obj\Debug\netcoreapp2.2\matrixtemp.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\exercicios\matrixtemp\obj\Debug\netcoreapp2.2\matrixtemp.AssemblyInfo.cs
+C:\Users\47651807863\Documents\exercicios\matrixtemp\obj\Debug\netcoreapp2.2\matrixtemp.dll
+C:\Users\47651807863\Documents\exercicios\matrixtemp\obj\Debug\netcoreapp2.2\matrixtemp.pdb
