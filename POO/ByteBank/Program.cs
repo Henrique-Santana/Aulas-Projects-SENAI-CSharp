@@ -1,90 +1,101 @@
 ﻿using System;
 
-namespace ByteBank {
-    class Program {
-        static void Main (string[] args) {
-            System.Console.WriteLine ("Cadastro de Cliente");
-            System.Console.WriteLine ();
-            System.Console.Write ("Nome: ");
-            string nome = Console.ReadLine ();
-            System.Console.Write ("Cpf: ");
-            string cpf = Console.ReadLine ();
-            System.Console.Write ("Email: ");
-            string email = Console.ReadLine ();
+namespace ByteBank
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Cadastro de Clientes");
+            Console.WriteLine();
+            Console.Write("Nome: ");
+            string nome = Console.ReadLine();
+            Console.Write("Cpf: ");
+            string cpf = Console.ReadLine();
+            Console.Write("Email: ");
+            string email = Console.ReadLine();
 
-            Cliente cliente1 = new Cliente (nome, cpf, email);
+            Cliente cliente1 = new Cliente(nome,cpf,email);
 
-            bool trocousenha = false;
-            do {
-                System.Console.WriteLine ("Digite a Senha: ");
-                string senha = Console.ReadLine ();
-                trocousenha = cliente1.TrocaSenha (senha);
-                if (!trocousenha) {
-                    System.Console.WriteLine ("Senha não atende aos Requisitos");
+            bool TrocouSenha = false;
+            do{
+                Console.Write("Digite a Senha: ");
+                string senha = Console.ReadLine();
+                TrocouSenha = cliente1.TrocaSenha(senha);
+                if (!TrocouSenha){
+                    Console.WriteLine("Senha nao atende aos requisitos");
                 } else {
-                    System.Console.WriteLine ("Senha trocada com sucesso");
+                    Console.WriteLine("Senha Trocada com sucesso");
                 }
-            } while (!trocousenha);
+            }while(!TrocouSenha);
 
-            Console.Clear ();
-            System.Console.WriteLine ("cadastro de conta corrente");
-            System.Console.WriteLine ();
-            System.Console.Write ("Agencia: ");
-            int Agencia = int.Parse (Console.ReadLine ());
-            System.Console.Write ("Numero: ");
-            int Numero = int.Parse (Console.ReadLine ());
-            /*  System.Console.Write("Titular: ");
-            int Titular = int.Parse(Console.ReadLine());*/
+            Console.WriteLine("Cadastro de Conta Corrente");
+            Console.WriteLine();
+            Console.Write("Agencia: ");
+            int agencia = int.Parse(Console.ReadLine());
+            Console.Write("Conta: ");
+            int conta = int.Parse(Console.ReadLine());
+            //Console.Write("Titular: ");
+            //string titular = Console.ReadLine();
 
             bool saldoValido = false;
             double saldo;
-            do {
-                System.Console.Write ("Digite o saldo: ");
-                saldo = double.Parse (Console.ReadLine ());
-                if (saldo >= 0) {
+            do{
+                Console.Write("Digite o Saldo: ");
+                saldo = double.Parse(Console.ReadLine());
+                if (saldo >= 0){
                     saldoValido = true;
                 } else {
-                    System.Console.WriteLine ("o saldo não pode ser negativo");
+                    Console.WriteLine("O saldo não pode ser negativo");
                 }
-            } while (!saldoValido);
+            }while(!saldoValido);
 
-            ContaCorrente contaCorrente = new ContaCorrente (Agencia, Numero, cliente1);
+            ContaCorrente contaCorrente = new ContaCorrente(agencia,conta,cliente1);
             contaCorrente.Saldo = saldo;
 
-            System.Console.WriteLine ("ByteBank - Depósito");
+            Console.WriteLine("ByteBank - Deposito");
             Cliente usuario = contaCorrente.Titular;
-            System.Console.WriteLine ($"Bem vindo - {usuario.Nome}");
-            System.Console.Write ("Digite o valor do depósito");
-            double valor = double.Parse (Console.ReadLine ());
-            contaCorrente.Deposito (valor);
-            System.Console.WriteLine ();
-            System.Console.WriteLine ("ByteBank - Saque");
-            System.Console.Write ("Qual o valor do saque?");
-            valor = double.Parse (Console.ReadLine ());
-            if (contaCorrente.Saque (valor)) {
-                System.Console.WriteLine ("Saque realizado com sucesso. Retire as notas");
-            } else {
-                System.Console.WriteLine ("Não foi possivel realizar a operações");
-            }
-            System.Console.WriteLine ();
+            Console.WriteLine($"Bem vindo - {usuario.Nome}");
+            Console.WriteLine($"Agencia: {contaCorrente.Agencia}   Conta: {contaCorrente.Numero}");
+            Console.WriteLine($"Saldo: {contaCorrente.Saldo}");
+            Console.Write("Digite o valor do Deposito: ");
+            double valor = double.Parse(Console.ReadLine());
+            saldo = contaCorrente.Deposito(valor);
+            Console.WriteLine($"Saldo atual: {saldo}");
+            Console.WriteLine();
 
-            System.Console.WriteLine ("ByteBank - Transferencia");
-            System.Console.WriteLine ("Digite o valor da transferência");
-            valor = double.Parse (Console.ReadLine ());
-            if (contaCorrente.Saque (valor)) {
-                System.Console.WriteLine ("Saque realizado com sucesso.Retire as notas");
+            Console.WriteLine("ByteBank - Saque");
+            Console.WriteLine($"Bem vindo - {usuario.Nome}");
+            Console.WriteLine($"Agencia: {contaCorrente.Agencia}   Conta: {contaCorrente.Numero}");
+            Console.WriteLine($"Saldo: {contaCorrente.Saldo}");
+            Console.Write("Qual o valor do Saque? ");
+            valor = double.Parse(Console.ReadLine());
+            if(contaCorrente.Saque(valor)){
+                Console.WriteLine("Saque realizado com sucesso. Retire as notas");
             } else {
-                System.Console.WriteLine ("Não foi possivel realizar a operação");
-            }
+                Console.WriteLine("Não foi possivel realizar a operação");
 
-            /* 
-            System.Console.Write("Depósito: ");
-            int Depósito = int.Parse(Console.ReadLine());
-            System.Console.Write("Saque: ");
-            int Saque = int.Parse(Console.ReadLine());
-            System.Console.Write("Transferência: ");
-            int Transferência = int.Parse(Console.ReadLine());
-            */
+            }
+            Console.WriteLine($"Saldo atual: {contaCorrente.Saldo}");
+            Console.WriteLine();
+
+            Cliente cliente2 = new Cliente("Alexandre","123.321.123-12","a@a.com");
+            ContaCorrente contaCorrente2 = new ContaCorrente(123,132,cliente2);
+            Console.WriteLine("ByteBank - Transferencia");
+            Console.WriteLine($"Bem vindo - {usuario.Nome}");
+            Console.WriteLine($"Agencia: {contaCorrente.Agencia}   Conta: {contaCorrente.Numero}");
+            Console.WriteLine($"Saldo origem: {contaCorrente.Saldo}");
+            Console.WriteLine($"Saldo destino: {contaCorrente2.Saldo}");
+            Console.Write("Digite o valor da tranferência: ");
+            valor = double.Parse(Console.ReadLine());
+        
+            if (contaCorrente.Transferencia(contaCorrente2,valor)){
+                Console.WriteLine("Tranferencia efetuada com sucesso.");
+            } else {
+                Console.WriteLine("Operação não pode ser realizada.");
+            }
+            Console.WriteLine($"Saldo origem: {contaCorrente.Saldo}");
+            Console.WriteLine($"Saldo destino: {contaCorrente2.Saldo}");
         }
     }
 }
