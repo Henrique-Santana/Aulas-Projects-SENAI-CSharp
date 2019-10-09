@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\exercicios\saladeaula\bin\Debug\netcoreapp2.2\saladeaula.deps.json
+C:\Users\47651807863\Documents\exercicios\saladeaula\bin\Debug\netcoreapp2.2\saladeaula.runtimeconfig.json
+C:\Users\47651807863\Documents\exercicios\saladeaula\bin\Debug\netcoreapp2.2\saladeaula.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\exercicios\saladeaula\bin\Debug\netcoreapp2.2\saladeaula.dll
+C:\Users\47651807863\Documents\exercicios\saladeaula\bin\Debug\netcoreapp2.2\saladeaula.pdb
+C:\Users\47651807863\Documents\exercicios\saladeaula\obj\Debug\netcoreapp2.2\saladeaula.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\exercicios\saladeaula\obj\Debug\netcoreapp2.2\saladeaula.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\exercicios\saladeaula\obj\Debug\netcoreapp2.2\saladeaula.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\exercicios\saladeaula\obj\Debug\netcoreapp2.2\saladeaula.AssemblyInfo.cs
+C:\Users\47651807863\Documents\exercicios\saladeaula\obj\Debug\netcoreapp2.2\saladeaula.dll
+C:\Users\47651807863\Documents\exercicios\saladeaula\obj\Debug\netcoreapp2.2\saladeaula.pdb
