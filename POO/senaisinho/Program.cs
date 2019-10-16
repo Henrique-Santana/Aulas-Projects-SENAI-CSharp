@@ -23,7 +23,6 @@ namespace senaisinho
 
             switch (opcao){
                 case 1:
-                    Cadalun ();
                     break;
 
             }
