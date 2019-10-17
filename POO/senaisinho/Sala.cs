@@ -2,13 +2,16 @@ namespace senaisinho
 {
     public class Sala
     {
-        public int CapacidadeAtual;
-        public int CapacidadeTotal;
+        public int CapacidadeAtual ;
+        public int CapacidadeTotal = 10;
         public int NumeroSala;
-        public string[] Alunos;
+        public string Alunos;
 
-        public Sala (int CapacidadeTotal, int NumeroSala){
-            
+        public Sala (int CapacidadeAtual,int CapacidadeTotal, int NumeroSala,string Alunos){
+            this.CapacidadeAtual = CapacidadeAtual;
+            this.CapacidadeTotal = CapacidadeTotal;
+            this.NumeroSala = NumeroSala;
+            this.Alunos = Alunos;
         }
     }
 }
