@@ -3,24 +3,26 @@ namespace ByteBank2.Models
 {
     public class ContaCorrente : ContaBancaria
     {
-        public ContaCorrente(int Agencia, int NumeroConta, string Titular): base(Agencia,NumeroConta,Titular) 
-        {/*o base(Agencia,NumeroConta,Titular) é para chamar os dados que quer ser herdado da class pai*/ /*o ":" serve para falar de qual class quer ser herdado no caso a class pai*/
-            
-        }
-        
-        public  override bool Saque(double valor)
+        public ContaCorrente(int Agencia, int NumeroConta, string Titular) : base(Agencia,NumeroConta,Titular)
         {
-            if (valor <= 0)
+
+        }
+
+        public override bool Saque(double Valor)
+        {
+            if(Valor >= 0)
             {
-                if (valor<= this.Saldo)
+                if(Valor <= this.Saldo)
                 {
-                    this.Saldo -= valor;
+                    this.Saldo -= Valor;
                     return true;
-                } else{
+                }
+                else
+                {
                     return false;
                 }
-            return false;
             }
+            return false;
         }
     }
 }

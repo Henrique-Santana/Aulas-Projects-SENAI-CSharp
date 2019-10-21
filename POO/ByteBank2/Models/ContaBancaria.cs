@@ -16,23 +16,28 @@ namespace ByteBank2.Models
             this.Saldo = 0.0;
         }
 
-        public abstract bool Saque(double valor);
+        public abstract bool Saque(double Valor);
 
-        public bool Deposito(double valor)
+        public bool Deposito(double Valor)
         {
-            if (valor >= 0){
-                this.Saldo += valor;
+            if (Valor >= 0)
+            {
+                this.Saldo += Valor;
                 return true;
             }
             return false;
         }
-        public bool Transferencia(ContaBancaria destino, double valor)
+
+        public bool Transferencia(ContaBancaria Destino, double Valor)
         {
-            if (this.Saque(valor)){
-                destino.Deposito(valor);
+            if (this.Saque(Valor))
+            {
+                Destino.Deposito(Valor);
                 return true;
+            } else
+            {
+                return false;
             }
-            return false;
         }
     }
 }

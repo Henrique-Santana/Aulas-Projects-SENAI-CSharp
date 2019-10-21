@@ -50,8 +50,8 @@ namespace senaisinho
                     string CapacidadeTotal = itens[1].Replace ("\"", "");
                     string NumeroSala = itens[1].Replace ("\"", "");
                     string Alunos = itens[1].Replace ("\"", "");
-                    Sala todoItem = new Sala (CapacidadeAtual, CapacidadeTotal,NumeroSala,Alunos);
-                    sala1.Add (todoItem);
+                    /*Sala todoItem = new Sala ( CapacidadeAtual, CapacidadeTotal,NumeroSala,Alunos);
+                    sala1.Add (todoItem);*/
                 }
 
                 return sala1;
