@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\bin\Debug\netcoreapp2.1\Reciclaveis.deps.json
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\bin\Debug\netcoreapp2.1\Reciclaveis.runtimeconfig.json
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\bin\Debug\netcoreapp2.1\Reciclaveis.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\bin\Debug\netcoreapp2.1\Reciclaveis.dll
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\bin\Debug\netcoreapp2.1\Reciclaveis.pdb
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\obj\Debug\netcoreapp2.1\Reciclaveis.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\obj\Debug\netcoreapp2.1\Reciclaveis.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\obj\Debug\netcoreapp2.1\Reciclaveis.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\obj\Debug\netcoreapp2.1\Reciclaveis.AssemblyInfo.cs
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\obj\Debug\netcoreapp2.1\Reciclaveis.dll
+C:\Users\47651807863\Documents\aulas-c-\POO\Reciclaveis\obj\Debug\netcoreapp2.1\Reciclaveis.pdb
