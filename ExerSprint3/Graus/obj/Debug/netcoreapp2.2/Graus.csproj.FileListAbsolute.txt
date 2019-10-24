@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\obj\Debug\netcoreapp2.2\Graus.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\obj\Debug\netcoreapp2.2\Graus.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\obj\Debug\netcoreapp2.2\Graus.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\obj\Debug\netcoreapp2.2\Graus.AssemblyInfo.cs
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\bin\Debug\netcoreapp2.2\Graus.deps.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\bin\Debug\netcoreapp2.2\Graus.runtimeconfig.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\bin\Debug\netcoreapp2.2\Graus.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\bin\Debug\netcoreapp2.2\Graus.dll
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\bin\Debug\netcoreapp2.2\Graus.pdb
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\obj\Debug\netcoreapp2.2\Graus.dll
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Graus\obj\Debug\netcoreapp2.2\Graus.pdb

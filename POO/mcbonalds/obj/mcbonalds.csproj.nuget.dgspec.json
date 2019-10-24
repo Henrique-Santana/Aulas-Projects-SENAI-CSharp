@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\mcbonalds.csproj": {}
+    "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\mcbonalds.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\mcbonalds.csproj": {
+    "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\mcbonalds.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\mcbonalds.csproj",
+        "projectUniqueName": "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\mcbonalds.csproj",
         "projectName": "mcbonalds",
-        "projectPath": "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\mcbonalds.csproj",
+        "projectPath": "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\mcbonalds.csproj",
         "packagesPath": "C:\\Users\\47651807863\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\obj\\",
+        "outputPath": "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\mcbonalds\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

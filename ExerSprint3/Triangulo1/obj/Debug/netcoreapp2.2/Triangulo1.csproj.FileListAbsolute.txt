@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\bin\Debug\netcoreapp2.2\Triangulo1.deps.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\bin\Debug\netcoreapp2.2\Triangulo1.runtimeconfig.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\bin\Debug\netcoreapp2.2\Triangulo1.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\bin\Debug\netcoreapp2.2\Triangulo1.dll
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\bin\Debug\netcoreapp2.2\Triangulo1.pdb
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\obj\Debug\netcoreapp2.2\Triangulo1.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\obj\Debug\netcoreapp2.2\Triangulo1.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\obj\Debug\netcoreapp2.2\Triangulo1.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\obj\Debug\netcoreapp2.2\Triangulo1.AssemblyInfo.cs
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\obj\Debug\netcoreapp2.2\Triangulo1.dll
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Triangulo1\obj\Debug\netcoreapp2.2\Triangulo1.pdb

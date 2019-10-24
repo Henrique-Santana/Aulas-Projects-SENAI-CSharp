@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\ByteBank.csproj": {}
+    "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\ByteBank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\ByteBank.csproj": {
+    "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\ByteBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\ByteBank.csproj",
+        "projectUniqueName": "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\ByteBank.csproj",
         "projectName": "ByteBank",
-        "projectPath": "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\ByteBank.csproj",
+        "projectPath": "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\ByteBank.csproj",
         "packagesPath": "C:\\Users\\47651807863\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\obj\\",
+        "outputPath": "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\ByteBank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
