@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\bin\Debug\netcoreapp2.2\Car.deps.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\bin\Debug\netcoreapp2.2\Car.runtimeconfig.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\bin\Debug\netcoreapp2.2\Car.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\bin\Debug\netcoreapp2.2\Car.dll
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\bin\Debug\netcoreapp2.2\Car.pdb
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\obj\Debug\netcoreapp2.2\Car.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\obj\Debug\netcoreapp2.2\Car.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\obj\Debug\netcoreapp2.2\Car.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\obj\Debug\netcoreapp2.2\Car.AssemblyInfo.cs
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\obj\Debug\netcoreapp2.2\Car.dll
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Car\obj\Debug\netcoreapp2.2\Car.pdb

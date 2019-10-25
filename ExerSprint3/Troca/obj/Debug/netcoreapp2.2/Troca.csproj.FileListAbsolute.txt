@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\bin\Debug\netcoreapp2.2\Troca.deps.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\bin\Debug\netcoreapp2.2\Troca.runtimeconfig.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\bin\Debug\netcoreapp2.2\Troca.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\bin\Debug\netcoreapp2.2\Troca.dll
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\bin\Debug\netcoreapp2.2\Troca.pdb
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\obj\Debug\netcoreapp2.2\Troca.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\obj\Debug\netcoreapp2.2\Troca.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\obj\Debug\netcoreapp2.2\Troca.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\obj\Debug\netcoreapp2.2\Troca.AssemblyInfo.cs
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\obj\Debug\netcoreapp2.2\Troca.dll
+C:\Users\47651807863\Documents\exercicios\ExerSprint3\Troca\obj\Debug\netcoreapp2.2\Troca.pdb
