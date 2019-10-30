@@ -9,3 +9,14 @@ C:\Users\47651807863\Documents\exercicios\calculadora\obj\Debug\netcoreapp2.2\ca
 C:\Users\47651807863\Documents\exercicios\calculadora\obj\Debug\netcoreapp2.2\calculadora.AssemblyInfo.cs
 C:\Users\47651807863\Documents\exercicios\calculadora\obj\Debug\netcoreapp2.2\calculadora.dll
 C:\Users\47651807863\Documents\exercicios\calculadora\obj\Debug\netcoreapp2.2\calculadora.pdb
+C:\Users\47651807863\Documents\aulas-c-\calculadora\bin\Debug\netcoreapp2.2\calculadora.deps.json
+C:\Users\47651807863\Documents\aulas-c-\calculadora\bin\Debug\netcoreapp2.2\calculadora.runtimeconfig.json
+C:\Users\47651807863\Documents\aulas-c-\calculadora\bin\Debug\netcoreapp2.2\calculadora.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\aulas-c-\calculadora\bin\Debug\netcoreapp2.2\calculadora.dll
+C:\Users\47651807863\Documents\aulas-c-\calculadora\bin\Debug\netcoreapp2.2\calculadora.pdb
+C:\Users\47651807863\Documents\aulas-c-\calculadora\obj\Debug\netcoreapp2.2\calculadora.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\aulas-c-\calculadora\obj\Debug\netcoreapp2.2\calculadora.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\calculadora\obj\Debug\netcoreapp2.2\calculadora.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\calculadora\obj\Debug\netcoreapp2.2\calculadora.AssemblyInfo.cs
+C:\Users\47651807863\Documents\aulas-c-\calculadora\obj\Debug\netcoreapp2.2\calculadora.dll
+C:\Users\47651807863\Documents\aulas-c-\calculadora\obj\Debug\netcoreapp2.2\calculadora.pdb

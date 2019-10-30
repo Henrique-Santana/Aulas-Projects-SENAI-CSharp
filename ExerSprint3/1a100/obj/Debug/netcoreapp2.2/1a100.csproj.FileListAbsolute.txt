@@ -9,3 +9,14 @@ C:\Users\47651807863\Documents\exercicios\ExerSprint3\1a100\obj\Debug\netcoreapp
 C:\Users\47651807863\Documents\exercicios\ExerSprint3\1a100\obj\Debug\netcoreapp2.2\1a100.AssemblyInfo.cs
 C:\Users\47651807863\Documents\exercicios\ExerSprint3\1a100\obj\Debug\netcoreapp2.2\1a100.dll
 C:\Users\47651807863\Documents\exercicios\ExerSprint3\1a100\obj\Debug\netcoreapp2.2\1a100.pdb
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\bin\Debug\netcoreapp2.2\1a100.deps.json
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\bin\Debug\netcoreapp2.2\1a100.runtimeconfig.json
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\bin\Debug\netcoreapp2.2\1a100.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\bin\Debug\netcoreapp2.2\1a100.dll
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\bin\Debug\netcoreapp2.2\1a100.pdb
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\obj\Debug\netcoreapp2.2\1a100.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\obj\Debug\netcoreapp2.2\1a100.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\obj\Debug\netcoreapp2.2\1a100.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\obj\Debug\netcoreapp2.2\1a100.AssemblyInfo.cs
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\obj\Debug\netcoreapp2.2\1a100.dll
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\1a100\obj\Debug\netcoreapp2.2\1a100.pdb

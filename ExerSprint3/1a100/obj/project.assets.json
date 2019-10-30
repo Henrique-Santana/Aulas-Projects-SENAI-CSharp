@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47651807863\\Documents\\exercicios\\ExerSprint3\\1a100\\1a100.csproj",
+      "projectUniqueName": "C:\\Users\\47651807863\\Documents\\aulas-c-\\ExerSprint3\\1a100\\1a100.csproj",
       "projectName": "1a100",
-      "projectPath": "C:\\Users\\47651807863\\Documents\\exercicios\\ExerSprint3\\1a100\\1a100.csproj",
+      "projectPath": "C:\\Users\\47651807863\\Documents\\aulas-c-\\ExerSprint3\\1a100\\1a100.csproj",
       "packagesPath": "C:\\Users\\47651807863\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47651807863\\Documents\\exercicios\\ExerSprint3\\1a100\\obj\\",
+      "outputPath": "C:\\Users\\47651807863\\Documents\\aulas-c-\\ExerSprint3\\1a100\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

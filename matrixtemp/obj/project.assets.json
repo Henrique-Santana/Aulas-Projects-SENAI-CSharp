@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47651807863\\Documents\\exercicios\\matrixtemp\\matrixtemp.csproj",
+      "projectUniqueName": "C:\\Users\\47651807863\\Documents\\aulas-c-\\matrixtemp\\matrixtemp.csproj",
       "projectName": "matrixtemp",
-      "projectPath": "C:\\Users\\47651807863\\Documents\\exercicios\\matrixtemp\\matrixtemp.csproj",
+      "projectPath": "C:\\Users\\47651807863\\Documents\\aulas-c-\\matrixtemp\\matrixtemp.csproj",
       "packagesPath": "C:\\Users\\47651807863\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47651807863\\Documents\\exercicios\\matrixtemp\\obj\\",
+      "outputPath": "C:\\Users\\47651807863\\Documents\\aulas-c-\\matrixtemp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

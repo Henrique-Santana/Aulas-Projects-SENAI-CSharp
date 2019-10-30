@@ -1,0 +1,11 @@
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\bin\Debug\netcoreapp2.2\Exe19.deps.json
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\bin\Debug\netcoreapp2.2\Exe19.runtimeconfig.json
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\bin\Debug\netcoreapp2.2\Exe19.runtimeconfig.dev.json
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\bin\Debug\netcoreapp2.2\Exe19.dll
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\bin\Debug\netcoreapp2.2\Exe19.pdb
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\obj\Debug\netcoreapp2.2\Exe19.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\obj\Debug\netcoreapp2.2\Exe19.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\obj\Debug\netcoreapp2.2\Exe19.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\obj\Debug\netcoreapp2.2\Exe19.AssemblyInfo.cs
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\obj\Debug\netcoreapp2.2\Exe19.dll
+C:\Users\47651807863\Documents\aulas-c-\ExerSprint3\Vetor\Exe19\obj\Debug\netcoreapp2.2\Exe19.pdb
