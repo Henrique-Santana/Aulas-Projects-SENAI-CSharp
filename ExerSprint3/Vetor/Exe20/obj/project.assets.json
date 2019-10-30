@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47651807863\\Documents\\exercicios\\matr\\matr.csproj",
-      "projectName": "matr",
-      "projectPath": "C:\\Users\\47651807863\\Documents\\exercicios\\matr\\matr.csproj",
+      "projectUniqueName": "C:\\Users\\47651807863\\Documents\\exercicios\\ExerSprint3\\Vetor\\Exe20\\Exe20.csproj",
+      "projectName": "Exe20",
+      "projectPath": "C:\\Users\\47651807863\\Documents\\exercicios\\ExerSprint3\\Vetor\\Exe20\\Exe20.csproj",
       "packagesPath": "C:\\Users\\47651807863\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47651807863\\Documents\\exercicios\\matr\\obj\\",
+      "outputPath": "C:\\Users\\47651807863\\Documents\\exercicios\\ExerSprint3\\Vetor\\Exe20\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
