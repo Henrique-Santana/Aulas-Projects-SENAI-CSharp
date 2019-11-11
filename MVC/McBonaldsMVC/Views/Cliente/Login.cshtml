@@ -1,11 +1,12 @@
     <main>
         <h2>Login</h2>
-        <form method="GET" action="dashboard.html">
+        <!-- GET expoe os dados digitados na url, o POST já não faz isso. -->
+        <form method="POST" action='@Url.Action("Login","Cliente")'>
 
             <div>
                 <label for="email">E-mail</label>
                 <br />
-                <input id="email" type="email" />
+                <input id="email" type="email" name="email"/>
             </div>
 
             <div>
@@ -15,6 +16,10 @@
             </div>
 
             <input type="submit" value="Entrar!" />
+            
+            <div id="link-cadastro">
+            <a href='@Url.Action("index","cadastro")'>Quero me cadastrar</a>
+            </div>
         </form>
 
     </main>

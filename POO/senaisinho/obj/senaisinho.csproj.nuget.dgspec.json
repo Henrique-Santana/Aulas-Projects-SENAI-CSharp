@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\senaisinho\\senaisinho.csproj": {}
+    "C:\\Users\\47651807863\\Documents\\Exercicios\\POO\\senaisinho\\senaisinho.csproj": {}
   },
   "projects": {
-    "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\senaisinho\\senaisinho.csproj": {
+    "C:\\Users\\47651807863\\Documents\\Exercicios\\POO\\senaisinho\\senaisinho.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\senaisinho\\senaisinho.csproj",
+        "projectUniqueName": "C:\\Users\\47651807863\\Documents\\Exercicios\\POO\\senaisinho\\senaisinho.csproj",
         "projectName": "senaisinho",
-        "projectPath": "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\senaisinho\\senaisinho.csproj",
+        "projectPath": "C:\\Users\\47651807863\\Documents\\Exercicios\\POO\\senaisinho\\senaisinho.csproj",
         "packagesPath": "C:\\Users\\47651807863\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\47651807863\\Documents\\exercicios\\POO\\senaisinho\\obj\\",
+        "outputPath": "C:\\Users\\47651807863\\Documents\\Exercicios\\POO\\senaisinho\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
