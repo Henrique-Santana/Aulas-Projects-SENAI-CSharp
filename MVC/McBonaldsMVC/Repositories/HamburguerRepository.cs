@@ -23,11 +23,10 @@ namespace McBonaldsMVC.Repositories
             foreach (var linha in linhas)
             {
                 Hamburguer h = new Hamburguer();
-                string[] dados = linhas.Split(";");
+                string[] dados = linha.Split(";");
                 h.Nome = dados[0];
                 h.Preco = double.Parse(dados[1]);
             }
-            
         } 
     }
 }
