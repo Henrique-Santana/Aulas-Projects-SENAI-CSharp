@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using McBonaldsMVC.Models;
 using McBonaldsMVC.Repositories;
+using McBonaldsMVC.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,23 +13,33 @@ namespace McBonaldsMVC.Controllers.PedidoController
 
         PedidoRepository pedidoRepository = new PedidoRepository();
         HamburguerRepository hamburguerRepository = new HamburguerRepository();
+        ShakeRepository shakeRepository = new ShakeRepository();
+
         public IActionResult Index()
         {
-            var hsmburgueres = hamburguerRepository.ObterTodos();
+            var hamburgueres = hamburguerRepository.ObterTodos();
+            var shake = shakeRepository.ObterTodos();
+
+            PedidoViewModels pedido = new PedidoViewModels(); 
+            pedido.Hamburgueres = hamburgueres;
+            pedido.Shakes = shake;
             
-            return View();
+            return View(pedido);
         }
         public IActionResult Registrar(IFormCollection form)
         {
             Pedido pedido = new Pedido();
 
             Shake shake = new Shake();
-            shake.Nome = form["shake"];
-            shake.Preco = 0.0;
+            var nomeShake = form["shake"];
+            shake.Nome = nomeShake;
+            shake.Preco = shakeRepository.ObterPrecoDe(nomeShake);
 
             pedido.Shake = shake;
             
-            Hamburguer hamburguer = new Hamburguer(form["hamburguer"], 0.0);
+            var nomeHamburguer = form["hamburguer"];
+            Hamburguer hamburguer = new Hamburguer(nomeHamburguer,hamburguerRepository.ObterPrecoDe(nomeHamburguer));
+
 
             pedido.Hamburguer = hamburguer;
 

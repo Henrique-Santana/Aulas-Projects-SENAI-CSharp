@@ -28,7 +28,7 @@ namespace McBonaldsMVC.Repositories
                 Hamburguer hamburguer = pedido.Hamburguer;
                 Shake shake = pedido.Shake;
 
-                return $"cliente_nome={cliente.Nome};cliente_endereço={cliente.Endereço};cliente_telefone={cliente.Telefone};cliente_email{cliente.Email};hamburguer_nome{hamburguer.Nome};hamburguer_preco={hamburguer.Preco};shake_nome={shake.Nome};shake_preco={shake.Preco};data_pedido={pedido.DatadoPedido};preco_total={pedido.PrecoTotal}";
+                return $"cliente_nome={cliente.Nome};cliente_endereço={cliente.Endereço};cliente_telefone={cliente.Telefone};cliente_email={cliente.Email};hamburguer_nome={hamburguer.Nome};hamburguer_preco={hamburguer.Preco};shake_nome={shake.Nome};shake_preco={shake.Preco};data_pedido={pedido.DatadoPedido};preco_total={pedido.PrecoTotal}";
             }
     }
 }
