@@ -19,6 +19,7 @@ namespace McBonaldsMVC.Repositories
             {
                 var linha = new string[] {PrepararRegistroCSV(cliente)};
                 File.AppendAllLines(PATH, linha);
+                
                 return true;
             }
 
@@ -35,7 +36,7 @@ namespace McBonaldsMVC.Repositories
                         c.Senha = ExtrairValorDoCampo("senha", linha);
                         c.Endereço = ExtrairValorDoCampo("endereço", linha);
                         c.Telefone = ExtrairValorDoCampo("telefone", linha);
-                        c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("dataNascimento", linha));
+                        c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("data_nascimento", linha));
 
                         return c;
                     }
