@@ -36,9 +36,9 @@ namespace McBonaldsMVC.Repositories
                     pedido.Cliente.Endereço = ExtrairValorDoCampo("cliente_endereço", linha);
                     pedido.Cliente.Telefone = ExtrairValorDoCampo("cliente_telefone", linha);
                     pedido.Cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
-                    pedido.Hamburguer.Nome = ExtrairValorDoCampo("hambueguer_nome", linha);
-                    pedido.Hamburguer.Preco = double.Parse(ExtrairValorDoCampo("hambueguer_preco", linha));
-                    pedido.Shake.Nome = ExtrairValorDoCampo("shake", linha);
+                    pedido.Hamburguer.Nome = ExtrairValorDoCampo("hamburguer_nome", linha);
+                    pedido.Hamburguer.Preco = double.Parse(ExtrairValorDoCampo("hamburguer_preco", linha));
+                    pedido.Shake.Nome = ExtrairValorDoCampo("shake_nome", linha);
                     pedido.Shake.Preco = double.Parse(ExtrairValorDoCampo("shake_preco", linha));
                     pedido.DatadoPedido = DateTime.Parse(ExtrairValorDoCampo("data_pedido", linha));
                     pedido.PrecoTotal = double.Parse(ExtrairValorDoCampo("preco_total", linha));
