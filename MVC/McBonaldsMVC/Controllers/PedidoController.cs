@@ -10,7 +10,6 @@ namespace McBonaldsMVC.Controllers.PedidoController
 {
     public class PedidoController : AbstractController 
     {
-
         PedidoRepository pedidoRepository = new PedidoRepository();
         HamburguerRepository hamburguerRepository = new HamburguerRepository();
         ShakeRepository shakeRepository = new ShakeRepository();
@@ -35,6 +34,9 @@ namespace McBonaldsMVC.Controllers.PedidoController
             {
                 pvm.Cliente = clienteLogado;
             }
+            pvm.NomeView = "Pedido";
+            pvm.UsuarioNome = ObterUsuarioNomeSession();
+            pvm.UsuarioEmail = ObterUsuarioSession();
             
             return View(pvm);
         }
@@ -66,10 +68,28 @@ namespace McBonaldsMVC.Controllers.PedidoController
             pedido.Cliente = cliente;
         
             pedido.DatadoPedido = DateTime.Now;
-            pedido.PrecoTotal = 0.0;
-            pedidoRepository.Inserir(pedido);
-
-            return View("Sucesso");
+            pedido.PrecoTotal = hamburguer.Preco + shake.Preco;
+            
+            if(pedidoRepository.Inserir(pedido))
+            {
+            return View("Sucesso", new RepostaViewModel()
+            {
+                Mensagem = "Aguarde a aprovação dos nossos administradores",
+                NomeView = "Sucesso",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
+            }
+            else
+            {
+            return View("Erro", new RepostaViewModel()
+            {
+                Mensagem = "Houve um erro ao processar seu pedido. tentefazer novamente",
+                NomeView = "Erro",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
+            }
         }
     }
 }

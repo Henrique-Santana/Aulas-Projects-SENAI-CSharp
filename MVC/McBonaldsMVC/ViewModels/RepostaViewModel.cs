@@ -1,6 +1,6 @@
 namespace McBonaldsMVC.ViewModels
 {
-    public class RepostaViewModel
+    public class RepostaViewModel : BaseViewModel
     {
         public string Mensagem {get; set;}
 

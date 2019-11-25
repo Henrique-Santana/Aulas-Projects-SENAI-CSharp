@@ -14,7 +14,12 @@ namespace McBonaldsMVC.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Login",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
         [HttpPost]
         public IActionResult Login(IFormCollection form)
@@ -42,7 +47,7 @@ namespace McBonaldsMVC.Controllers
 
                     }
                     else {
-                        return View("Erro", new RepostaViewModel("Senha"));
+                        return View("Erro", new RepostaViewModel("Senha incorreta"));
                     }
                 } 
                 else 
@@ -64,8 +69,18 @@ namespace McBonaldsMVC.Controllers
 
             return View(new HistoricoViewModel()
             {
-                Pedidos = pedidos 
+                Pedidos = pedidos,
+                NomeView = "Historico",
+                UsuarioNome = ObterUsuarioNomeSession(),
+                UsuarioEmail = ObterUsuarioSession()
             });
+        }
+        public IActionResult Logoff()
+        {
+            HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
+            HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
