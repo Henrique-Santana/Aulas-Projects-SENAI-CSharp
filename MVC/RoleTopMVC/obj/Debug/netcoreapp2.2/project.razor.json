@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Album\\Index.cshtml",
+      "TargetPath": "Views\\Album\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -2991,6 +2996,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Agendamento\\Index.cshtml",
+      "TargetPath": "Views\\Agendamento\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -2998,6 +3008,11 @@
     {
       "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

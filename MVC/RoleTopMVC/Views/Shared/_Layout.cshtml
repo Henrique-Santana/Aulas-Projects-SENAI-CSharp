@@ -1,9 +1,24 @@
-﻿<!DOCTYPE html>
+﻿@model RoleTopMVC.ViewModels.BaseViewModel;
+
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <title>Role Top</title>
-        <link href="css/style.css" rel="stylesheet" >
+        <link href= "~/img/logo.png" rel="icon" type="image">
+        @if(!"Agendamento".Equals(@Model.NomeView))
+        {
+        <link href="~/css/style.css" rel="stylesheet" >
+            
+        }
+        @if(!"Home".Equals(@Model.NomeView))
+        {
+            <link href="~/css/styleALBU.css" rel="stylesheet" >
+        }
+        @if(!"Album".Equals(@Model.NomeView))
+        {
+            <link href="~/css/styleAGEN.css" rel="stylesheet" >
+        }
     </head>
 <body>
     <header>
@@ -11,7 +26,7 @@
             <div class="logologin">
                 <img src="img/logo.png" title="logo">    
                 <ul>
-                    <li> <a href="login.html"> login </a></li>
+                    <li> <a asp-controller="Login" asp-action="Index"> login </a></li>
                     <hr />
                     <li> <a asp-controller="Cadastro" asp-action="Index"> cadastre-se </a></li>    
                 </ul>        
@@ -19,14 +34,14 @@
             <div class="barramenu">
                 <ul>
                     <li> <a asp-controller="Home" asp-action="Index" class="active"><strong>inicio</strong></a>
-                    <li><a href="albuns.html"><strong>Albuns</strong></a></li>
-                    <li><a href="index.html#infos-footer"><strong>Contatos</strong></a></li>
-                    <li> <a href="agendamentos.html"><strong> Agende-JÁ</strong></a></li>
+                    <li><a asp-controller="Album" asp-action="Index" ><strong>Albuns</strong></a></li>
+                    <li><a href='@Url.Action("index", "Home")#infos-footer' ><strong>Contatos</strong></a></li>
+                    <li> <a asp-controller="Agendamento" asp-action="Index" ><strong> Agende-JÁ</strong></a></li>
                 </ul>
         </div>
         </nav>
     </header>
-            @RenderBody()
+        @RenderBody()
 <footer>
         <div id="infos-footer">
             <address>

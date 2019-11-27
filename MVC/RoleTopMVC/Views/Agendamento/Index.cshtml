@@ -1,0 +1,66 @@
+<main>
+    <h2>Agendamento</h2>
+    <form method="GET" action="index.html">
+        <div>
+            <label for="nome">Nome Completo</label>
+            <br />
+            <input id="nome" type="text" maxlength="20" minlength="3" name="nome"/>
+        </div>
+        <div>
+            <label for="endereco">Endereço</label>
+            <br />
+            <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" />
+        </div>
+        <div>
+            <label for="telefone">Telefone para contato</label>
+            <br />
+            <input id="telefone" type="text" />
+        </div>
+        <div>
+            <label for="dia-do-evento">Dia do Evento</label>
+            <br />
+            <input id="dia-do-evento" type="text" />
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <br />
+            <input id="email" type="email" />
+        </div>
+        <div>
+                <label for="cpf">CPF</label>
+                <br />
+                <input id="cpf" type="text" />
+        </div>
+        <div class="selecionaveis">
+            <div>
+                <label for="modo-de-pagamento">Modo de Pagamento</label>
+                <br/>
+                <select id="modo-de-pagamento" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Depósito">Depósito</option>
+                    <option value="Cartão">Cartão</option>
+                </select>
+            </div>
+            <div>
+                <label for="tipo-de-evento">Tipo de Evento</label>
+                <br/>
+                <select id="tipo-de-evento">
+                    <option value="" disabled selected>Selecione</option>
+                    <option>Casamento</option>
+                    <option>Aniversario</option>
+                    <option>Show</option>
+                </select>
+            </div>
+            <div>
+                <label for="opcionais">Opcionais</label>
+                <br/>
+                <select id="opcionais">
+                    <option value="" disabled selected>Selecione</option>
+                    <option>SOM</option>
+                    <option>Iluminação</option>
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="Agendar" />
+    </form>
+</main>
