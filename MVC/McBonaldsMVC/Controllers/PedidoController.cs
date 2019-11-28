@@ -41,6 +41,7 @@ namespace McBonaldsMVC.Controllers.PedidoController
             return View(pvm);
         }
         public IActionResult Registrar(IFormCollection form)
+
         {
             Pedido pedido = new Pedido();
 
@@ -66,7 +67,6 @@ namespace McBonaldsMVC.Controllers.PedidoController
             };
 
             pedido.Cliente = cliente;
-        
             pedido.DatadoPedido = DateTime.Now;
             pedido.PrecoTotal = hamburguer.Preco + shake.Preco;
             
@@ -91,5 +91,9 @@ namespace McBonaldsMVC.Controllers.PedidoController
             });
             }
         }
+    public IActionResult Aprovar(ulong id)
+    {
+        Pedido pedido = pedidoRepository.ObterPor(id);
+    }
     }
 }

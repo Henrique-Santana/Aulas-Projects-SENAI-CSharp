@@ -13,6 +13,7 @@ namespace RoleTopMVC.Controllers
     {
         public IActionResult Index()
         {
+            Cliente cliente = new Cliente();
             return View(new BaseViewModel()
             {
                 NomeView = "Home"

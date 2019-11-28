@@ -19,6 +19,8 @@ namespace McBonaldsMVC.Repositories
 
             public bool Inserir(Pedido pedido)
             {
+                var quantidadeLinhas = File.ReadAllLines(PATH).Length;
+                pedido.Id = (ulong) ++quantidadeLinhas;
                 var linha = new string[] {PrepararRegistroCSV(pedido)};
                 File.AppendAllLines(PATH, linha);
                 return true;
@@ -32,6 +34,8 @@ namespace McBonaldsMVC.Repositories
                 {
                     Pedido pedido = new Pedido();
                     
+                    pedido.Id = ulong.Parse(ExtrairValorDoCampo("is", linha));
+                    pedido.Status = uint.Parse(ExtrairValorDoCampo("status_pedidos", linha));
                     pedido.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
                     pedido.Cliente.Endereço = ExtrairValorDoCampo("cliente_endereço", linha);
                     pedido.Cliente.Telefone = ExtrairValorDoCampo("cliente_telefone", linha);
@@ -60,13 +64,26 @@ namespace McBonaldsMVC.Repositories
                 }
                 return  pedidosCliente;
             }
+
+            public Pedido ObterPor(ulong id)
+            {
+                var pedidosTotais = ObterTodos();
+                foreach (var pedido in pedidosTotais)
+                {
+                    if(pedido.Id == id)
+                    {
+                        return pedido;
+                    }
+                }
+                return null;
+            }
             private string PrepararRegistroCSV(Pedido pedido)
             {
                 Cliente cliente = pedido.Cliente;
                 Hamburguer hamburguer = pedido.Hamburguer;
                 Shake shake = pedido.Shake;
 
-                return $"cliente_nome={cliente.Nome};cliente_endereço={cliente.Endereço};cliente_telefone={cliente.Telefone};cliente_email={cliente.Email};hamburguer_nome={hamburguer.Nome};hamburguer_preco={hamburguer.Preco};shake_nome={shake.Nome};shake_preco={shake.Preco};data_pedido={pedido.DatadoPedido};preco_total={pedido.PrecoTotal}";
+                return $"id={pedido.Id};status_pedidos={pedido.Status};cliente_nome={cliente.Nome};cliente_endereço={cliente.Endereço};cliente_telefone={cliente.Telefone};cliente_email={cliente.Email};hamburguer_nome={hamburguer.Nome};hamburguer_preco={hamburguer.Preco};shake_nome={shake.Nome};shake_preco={shake.Preco};data_pedido={pedido.DatadoPedido};preco_total={pedido.PrecoTotal}";
             }
             
     }

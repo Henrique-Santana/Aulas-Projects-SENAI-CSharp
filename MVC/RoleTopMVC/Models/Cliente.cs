@@ -1,0 +1,25 @@
+using System;
+namespace RoleTopMVC.Models
+{
+    public class Cliente
+    {
+        public string Nome {get; set;}
+        public string Telefone {get; set;}
+        public string Email {get; set;}
+        public string Cpf  {get; set;}
+        public string Senha {get; set;}
+
+        public Cliente()
+        {
+
+        }
+        public Cliente(string nome, string telefone,string email, string Cpf, string senha)
+        {
+            this.Nome = nome;
+            this.Telefone = telefone;
+            this.Email = email;
+            this.Cpf = Cpf;
+            this.Senha = senha;
+        }
+    }
+}

@@ -13,6 +13,7 @@ namespace McBonaldsMVC.Controllers
             var email = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
             if (!string.IsNullOrEmpty(email))
             {
+                
                 return email;
             }
             else
