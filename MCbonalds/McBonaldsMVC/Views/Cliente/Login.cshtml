@@ -1,0 +1,25 @@
+    <main>
+        <h2>Login</h2>
+        <!-- GET expoe os dados digitados na url, o POST já não faz isso. -->
+        <form method="POST" action='@Url.Action("Login","Cliente")'>
+
+            <div>
+                <label for="email">E-mail</label>
+                <br />
+                <input id="email" type="email" name="email"/>
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <br />
+                <input id="senha" type="password" name="senha" />
+            </div>
+
+            <input type="submit" value="Entrar!" />
+            
+            <div id="link-cadastro">
+            <a href='@Url.Action("index","cadastro")'>Quero me cadastrar</a>
+            </div>
+        </form>
+
+    </main>

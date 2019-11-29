@@ -32,13 +32,13 @@ namespace McBonaldsMVC.Controllers
 
                 clienteRepositorio.Inserir(cliente);
                 
-                return View("Sucesso");
+                return View("Sucesso",new RepostaViewModel());
                 //Retorna uma View Erro que na vdd é um File em View/Shared, que retorna uma msg de sucesso.
             }
             catch (Exception e)
             {
                 //Retorna uma View Erro que na vdd é um File em View/Shared, que retorna uma msg de erro.
-                return View("Erro");
+                return View ("Erro",new RepostaViewModel());
             }
         }
     }

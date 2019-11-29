@@ -67,15 +67,56 @@ namespace McBonaldsMVC.Repositories
 
             public Pedido ObterPor(ulong id)
             {
-                var pedidosTotais = ObterTodos();
-                foreach (var pedido in pedidosTotais)
+                var linhas = File.ReadAllLines(PATH);
+                foreach (var linha in linhas)
                 {
-                    if(pedido.Id == id)
+                    var idConvertido = ulong.Parse(ExtrairValorDoCampo("id",linha));
+                    if(idConvertido.Equals (id))
                     {
+                        Pedido pedido = new Pedido();
+                    
+                    pedido.Id = ulong.Parse(ExtrairValorDoCampo("is", linha));
+                    pedido.Status = uint.Parse(ExtrairValorDoCampo("status_pedidos", linha));
+                    pedido.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
+                    pedido.Cliente.Endereço = ExtrairValorDoCampo("cliente_endereço", linha);
+                    pedido.Cliente.Telefone = ExtrairValorDoCampo("cliente_telefone", linha);
+                    pedido.Cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
+                    pedido.Hamburguer.Nome = ExtrairValorDoCampo("hamburguer_nome", linha);
+                    pedido.Hamburguer.Preco = double.Parse(ExtrairValorDoCampo("hamburguer_preco", linha));
+                    pedido.Shake.Nome = ExtrairValorDoCampo("shake_nome", linha);
+                    pedido.Shake.Preco = double.Parse(ExtrairValorDoCampo("shake_preco", linha));
+                    pedido.DatadoPedido = DateTime.Parse(ExtrairValorDoCampo("data_pedido", linha));
+                    pedido.PrecoTotal = double.Parse(ExtrairValorDoCampo("preco_total", linha));
+
                         return pedido;
                     }
                 }
                 return null;
+            }
+
+            public bool Atualizar (Pedido pedido)
+            {
+                var pedidosTotais = File.ReadAllLines(PATH);
+                var pedidoCSV = PrepararRegistroCSV(pedido);
+                var linhaPedido = -1;
+                var resultado = false;
+
+                for (int i = 0; i < pedidosTotais.Length; i++)
+                {
+                    var idConvertido = ulong.Parse (ExtrairValorDoCampo("id",pedidosTotais[i]));
+                    if(pedido.Id.Equals(idConvertido))
+                    {
+                        linhaPedido = i;
+                        resultado = true;
+                        break;
+                    }
+                }
+                if (resultado){
+                    pedidosTotais[linhaPedido] = pedidoCSV;
+                    File.WriteAllLines(PATH,pedidosTotais);
+                }
+
+                return resultado;
             }
             private string PrepararRegistroCSV(Pedido pedido)
             {

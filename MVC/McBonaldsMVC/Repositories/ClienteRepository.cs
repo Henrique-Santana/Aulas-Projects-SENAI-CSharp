@@ -37,6 +37,7 @@ namespace McBonaldsMVC.Repositories
                         c.Endereço = ExtrairValorDoCampo("endereço", linha);
                         c.Telefone = ExtrairValorDoCampo("telefone", linha);
                         c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("dataNascimento", linha));
+                        c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", linha));
 
                         return c;
                     }
@@ -46,7 +47,7 @@ namespace McBonaldsMVC.Repositories
 
             private string PrepararRegistroCSV(Cliente cliente)
             {
-                return $"nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereço={cliente.Endereço};telefone{cliente.Telefone};dataNascimento={cliente.DataNascimento}";
+                return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereço={cliente.Endereço};telefone{cliente.Telefone};dataNascimento={cliente.DataNascimento}";
             }
 
             public string ExtrairValorDoCampo(string nomeCampo, string linha)

@@ -1,1 +1,2 @@
-nome=HenriqueB;email=henriqueB@gmail.com;senha=321321;endereço=JAboti;telefone12441244;dataNascimento=20/11/2019 00:00:00
+tipo_usuario=0;nome=Administrador;email=admin@gmail.com;senha=111;endereço=;telefone;dataNascimento= 00:00:00
+tipo_usuario=1;nome=henriquebr;email=henriqueB@gmail.com;senha=654654;endereço=jaja;telefone965432198;dataNascimento=20/02/2000 00:00:00
