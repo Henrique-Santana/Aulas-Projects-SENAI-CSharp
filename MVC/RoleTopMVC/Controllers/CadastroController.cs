@@ -11,6 +11,7 @@ namespace RoleTopMVC.Controllers
             return View(new BaseViewModel()
             {
                 NomeView = "Cadastro"
+                // montar o abstract controller
             });
         }
 

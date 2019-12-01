@@ -28,7 +28,7 @@ namespace McBonaldsMVC.Repositories
                 var linhas = File.ReadAllLines(PATH);
                 foreach (var linha in linhas)
                 {
-                    if(ExtrairValorDoCampo("email", linha).Equals(email))
+                    if(ExtrairValorDoCampo("email", linha).Equals(email)) // extrair o valor do campo email de cada linha... se o que extraiu for igual o que esta no campo email executa
                     {
                         Cliente c = new Cliente();
                         c.Nome = ExtrairValorDoCampo("nome", linha);
