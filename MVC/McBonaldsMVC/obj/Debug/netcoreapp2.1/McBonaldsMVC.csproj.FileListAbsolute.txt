@@ -1,0 +1,6 @@
+D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.csprojAssemblyReference.cache
+D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.csproj.CoreCompileInputs.cache
+D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.RazorAssemblyInfo.cache
+D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.RazorAssemblyInfo.cs
+D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.AssemblyInfoInputs.cache
+D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.AssemblyInfo.cs

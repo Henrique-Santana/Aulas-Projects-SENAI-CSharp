@@ -1,34 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj": {}
+    "D:\\Henrique\\SENAI\\visual studio cod\\c#\\Minhas Aulas-C#\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj": {
+    "D:\\Henrique\\SENAI\\visual studio cod\\c#\\Minhas Aulas-C#\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
+        "projectUniqueName": "D:\\Henrique\\SENAI\\visual studio cod\\c#\\Minhas Aulas-C#\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
         "projectName": "McBonaldsMVC",
-        "projectPath": "C:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
-        "packagesPath": "C:\\Users\\47651807863\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\obj\\",
+        "projectPath": "D:\\Henrique\\SENAI\\visual studio cod\\c#\\Minhas Aulas-C#\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
+        "packagesPath": "C:\\Users\\Sala de Video\\.nuget\\packages\\",
+        "outputPath": "D:\\Henrique\\SENAI\\visual studio cod\\c#\\Minhas Aulas-C#\\MVC\\McBonaldsMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\47651807863\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Sala de Video\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp2.1": {
             "projectReferences": {}
           }
         },
@@ -39,12 +37,12 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.1, )",
               "autoReferenced": true
             },
             "Microsoft.AspNetCore.Razor.Design": {
@@ -53,9 +51,8 @@
               "version": "[2.2.0, )"
             },
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },

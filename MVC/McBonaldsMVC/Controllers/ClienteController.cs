@@ -1,4 +1,5 @@
 using System;
+using McBonaldsMVC.Enums;
 using McBonaldsMVC.Repositories;
 using McBonaldsMVC.ViewModels;
 using Microsoft.AspNetCore.Http;
@@ -38,22 +39,33 @@ namespace McBonaldsMVC.Controllers
                 var cliente = clienteRepository.ObterPor(usuario);
 
                 if (cliente != null)
+            {
+                if(cliente.Senha.Equals(senha))
                 {
-                    if(cliente.Senha.Equals(senha))
+                    switch (cliente.TipoUsuario)
                     {
-                        HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
-                        HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                        return RedirectToAction("Historico", "Cliente");
+                        case (uint) TiposUsuario.CLIENTE:
+                            HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario); //SetString guarda uma string e armazena  na session email
+                            HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
+                            HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
+                            return RedirectToAction("Historico", "Cliente");
 
+                        default:
+                            HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario); //SetString guarda uma string e armazena  na session email
+                            HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
+                            HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
+                            return RedirectToAction("Dashboard", "Cliente");
                     }
-                    else {
-                        return View("Erro", new RepostaViewModel("Senha incorreta"));
-                    }
-                } 
-                else 
-                {
-                    return View("Erro", new RepostaViewModel($"Usuario {usuario} não foi encontrado"));
                 }
+                else
+                {
+                    return View("Erro", new RepostaViewModel("Senha incorreta"));
+                }
+            }
+            else
+            {
+                return View("Erro", new RepostaViewModel($"Usuário {usuario} não encontrado"));                
+            }
 
             }
             catch (Exception e)

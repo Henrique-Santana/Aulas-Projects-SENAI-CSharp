@@ -14,7 +14,6 @@ namespace McBonaldsMVC.Controllers.PedidoController
         PedidoRepository pedidoRepository = new PedidoRepository();
         HamburguerRepository hamburguerRepository = new HamburguerRepository();
         ShakeRepository shakeRepository = new ShakeRepository();
-
         ClienteRepository clienteRepository = new ClienteRepository();
 
         public IActionResult Index()
@@ -44,6 +43,7 @@ namespace McBonaldsMVC.Controllers.PedidoController
         public IActionResult Registrar(IFormCollection form)
 
         {
+            ViewData["Action"] = "Pedido";
             Pedido pedido = new Pedido();
 
             Shake shake = new Shake();
@@ -97,7 +97,7 @@ namespace McBonaldsMVC.Controllers.PedidoController
         Pedido pedido = pedidoRepository.ObterPor(id);
         pedido.Status = (uint) StatusPedido.APROVADO;
 
-        if(pedidoRepository.Atualizar(pedido))
+        if(pedidoRepository.Atualizar(id,pedido))
         {
             return RedirectToAction("Dashboard", "Administrador");
         }
@@ -117,7 +117,7 @@ namespace McBonaldsMVC.Controllers.PedidoController
         Pedido pedido = pedidoRepository.ObterPor(id);
         pedido.Status = (uint) StatusPedido.REPROVADO;
 
-        if(pedidoRepository.Atualizar(pedido))
+        if(pedidoRepository.Atualizar(id, pedido))
         {
             return RedirectToAction("Dashboard", "Administrador");
         }

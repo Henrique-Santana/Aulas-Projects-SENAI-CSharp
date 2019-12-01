@@ -8,8 +8,13 @@ namespace McBonaldsMVC.Controllers
     public class AdministradorController : AbstractController
     {
         PedidoRepository pedidoRepository = new PedidoRepository();
+
+        [HttpGet] // marcar que as requisições que chegarem a ele são do tipo Get.... se for do tipo POST é necessário mudar HttpPost
         public IActionResult DashBoard()
         {
+            var tipoUsuarioSessao = uint.Parse(ObterUsuarioTipoSession());
+            if(tipoUsuarioSessao.Equals((uint)TiposUsuario.ADMINISTRADOR))
+            {
             var pedidos = pedidoRepository.ObterTodos();
             DashboardViewModel dashboardViewModel = new DashboardViewModel();
 
@@ -33,6 +38,13 @@ namespace McBonaldsMVC.Controllers
             dashboardViewModel.UsuarioEmail = ObterUsuarioSession();
 
             return View(dashboardViewModel); 
+            }
+            
+            return View("Erro", new RepostaViewModel()
+            {
+                NomeView = "Dashboard",
+                Mensagem = "Acesso restrito"
+            });
 
         }
     }

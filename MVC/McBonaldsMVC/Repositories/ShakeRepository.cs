@@ -35,7 +35,7 @@ namespace McBonaldsMVC.Repositories
         {
             List<Shake> shakes = new List<Shake>();
 
-            var linhas = File.ReadAllLines(PATH);
+            string[] linhas = File.ReadAllLines(PATH);
             foreach (var linha in linhas)
             {
                 Shake s = new Shake();
@@ -44,7 +44,7 @@ namespace McBonaldsMVC.Repositories
                 s.Preco = double.Parse(dados[1]);
                 shakes.Add(s);
             }
-            return(shakes);
+            return shakes;
 
         }
     }

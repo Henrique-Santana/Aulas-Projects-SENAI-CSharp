@@ -65,53 +65,38 @@ namespace McBonaldsMVC.Repositories
                 return  pedidosCliente;
             }
 
-            public Pedido ObterPor(ulong id)
+            public Pedido ObterPor(ulong id) // método para obter o Id dos pedidos
             {
-                var linhas = File.ReadAllLines(PATH);
-                foreach (var linha in linhas)
+                var pedidosTotais = ObterTodos();
+                foreach (var pedido in pedidosTotais)
                 {
-                    var idConvertido = ulong.Parse(ExtrairValorDoCampo("id",linha));
-                    if(idConvertido.Equals (id))
+                    if(pedido.Id == id) //condição para o banco verificar se o Id do pedido do cliente, encontra-se na tabela, para depois retornar o pedido com o status de aprovado, reprovado
                     {
-                        Pedido pedido = new Pedido();
-                    
-                    pedido.Id = ulong.Parse(ExtrairValorDoCampo("is", linha));
-                    pedido.Status = uint.Parse(ExtrairValorDoCampo("status_pedidos", linha));
-                    pedido.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
-                    pedido.Cliente.Endereço = ExtrairValorDoCampo("cliente_endereço", linha);
-                    pedido.Cliente.Telefone = ExtrairValorDoCampo("cliente_telefone", linha);
-                    pedido.Cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
-                    pedido.Hamburguer.Nome = ExtrairValorDoCampo("hamburguer_nome", linha);
-                    pedido.Hamburguer.Preco = double.Parse(ExtrairValorDoCampo("hamburguer_preco", linha));
-                    pedido.Shake.Nome = ExtrairValorDoCampo("shake_nome", linha);
-                    pedido.Shake.Preco = double.Parse(ExtrairValorDoCampo("shake_preco", linha));
-                    pedido.DatadoPedido = DateTime.Parse(ExtrairValorDoCampo("data_pedido", linha));
-                    pedido.PrecoTotal = double.Parse(ExtrairValorDoCampo("preco_total", linha));
-
                         return pedido;
                     }
                 }
                 return null;
             }
 
-            public bool Atualizar (Pedido pedido)
+            public bool Atualizar (ulong id, Pedido pedido)
             {
-                var pedidosTotais = File.ReadAllLines(PATH);
-                var pedidoCSV = PrepararRegistroCSV(pedido);
-                var linhaPedido = -1;
+                var pedidosTotais = File.ReadAllLines(PATH); // recolhe tudo que esta na tabela de pedidos
+                var pedidoCSV = PrepararRegistroCSV(pedido); // transforma o pedido atualizado em string para ser gravado no CSV
+                var linhaPedido = -1; // porque não haverá linha -1.. serve apenas para atualizar
                 var resultado = false;
 
                 for (int i = 0; i < pedidosTotais.Length; i++)
                 {
                     var idConvertido = ulong.Parse (ExtrairValorDoCampo("id",pedidosTotais[i]));
-                    if(pedido.Id.Equals(idConvertido))
+                    if(pedido.Id.Equals(idConvertido))  // se o ID do pedido que foi enviado para atualizar for igual a linha com o ID igual ele vai atualizar o status
                     {
                         linhaPedido = i;
                         resultado = true;
                         break;
                     }
                 }
-                if (resultado){
+                if (resultado)
+                {
                     pedidosTotais[linhaPedido] = pedidoCSV;
                     File.WriteAllLines(PATH,pedidosTotais);
                 }
