@@ -9,7 +9,7 @@ namespace McBonaldsMVC.Repositories
         private const string PATH = "Database/Cliente.csv";//PATH é uma constante, onde fica o csv, para crialo.
         public ClienteRepository()
             {
-                if(!File.Exists(PATH))//File Exists serve para conferir se existe o arquivo csv(PATH). 
+                if(!File.Exists(PATH))//File Exists serve para conferir se existe o arquivo csv(PATH).
                 {
                     File.Create(PATH).Close();//Cria e Fecha.
                 }
@@ -47,7 +47,7 @@ namespace McBonaldsMVC.Repositories
 
             private string PrepararRegistroCSV(Cliente cliente)
             {
-                return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereço={cliente.Endereço};telefone{cliente.Telefone};dataNascimento={cliente.DataNascimento}";
+                return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereço={cliente.Endereço};telefone={cliente.Telefone};dataNascimento={cliente.DataNascimento}";
             }
 
             public string ExtrairValorDoCampo(string nomeCampo, string linha)
@@ -65,10 +65,11 @@ namespace McBonaldsMVC.Repositories
                 {
                     valor = linha.Substring(indiceChave);
                 }
-                System.Console.WriteLine($"Camppo{nomeCampo} tem valor {valor}");
+                System.Console.WriteLine($"Campo{nomeCampo} tem valor {valor}");
                 return valor.Replace(nomeCampo + "=", "");// apaga o "email=" e substitui por nada
 
             }
+            
         
     }
 }

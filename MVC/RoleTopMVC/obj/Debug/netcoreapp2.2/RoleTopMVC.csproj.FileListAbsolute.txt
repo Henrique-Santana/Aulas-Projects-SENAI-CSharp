@@ -32,3 +32,4 @@ C:\Users\47651807863\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2
 C:\Users\47651807863\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Album\Index.g.cshtml.cs
 C:\Users\47651807863\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Agendamento\Index.g.cshtml.cs
 C:\Users\47651807863\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Login\Index.g.cshtml.cs
+C:\Users\47651807863\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs

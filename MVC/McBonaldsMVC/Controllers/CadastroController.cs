@@ -24,7 +24,7 @@ namespace McBonaldsMVC.Controllers
         public IActionResult CadastrarCliente(IFormCollection form)
         {
             //
-            ViewData["Action"] = "Cadatro";
+            ViewData["Action"] = "Cadastro";
             try
             {
                 //objeto criado e construtor criado para podemos criar um cliente.

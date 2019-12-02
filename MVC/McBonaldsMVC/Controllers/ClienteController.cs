@@ -54,7 +54,7 @@ namespace McBonaldsMVC.Controllers
                             HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario); //SetString guarda uma string e armazena  na session email
                             HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
                             HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
-                            return RedirectToAction("Dashboard", "Cliente");
+                            return RedirectToAction("Dashboard", "Administrador");
                     }
                 }
                 else

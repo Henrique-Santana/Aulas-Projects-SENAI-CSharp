@@ -4,3 +4,9 @@ D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debu
 D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.RazorAssemblyInfo.cs
 D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.AssemblyInfoInputs.cache
 D:\Henrique\SENAI\visual studio cod\c#\Minhas Aulas-C#\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.AssemblyInfo.cs
+C:\Users\47651807863\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.RazorAssemblyInfo.cache
+C:\Users\47651807863\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.RazorAssemblyInfo.cs
+C:\Users\47651807863\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.1\McBonaldsMVC.AssemblyInfo.cs

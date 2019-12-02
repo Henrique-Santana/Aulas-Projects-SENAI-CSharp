@@ -34,7 +34,7 @@ namespace McBonaldsMVC.Repositories
                 {
                     Pedido pedido = new Pedido();
                     
-                    pedido.Id = ulong.Parse(ExtrairValorDoCampo("is", linha));
+                    pedido.Id = ulong.Parse(ExtrairValorDoCampo("id", linha));
                     pedido.Status = uint.Parse(ExtrairValorDoCampo("status_pedidos", linha));
                     pedido.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
                     pedido.Cliente.Endereço = ExtrairValorDoCampo("cliente_endereço", linha);

@@ -3019,6 +3019,11 @@
       "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Cadastro\\Index.cshtml",
       "TargetPath": "Views\\Cadastro\\Index.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Shared\\Sucesso.cshtml",
+      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
