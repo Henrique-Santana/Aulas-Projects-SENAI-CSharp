@@ -35,6 +35,7 @@ namespace RoleTopMVC.Repositories
                     c.Senha = ExtrairValorDoCampo("senha", linha);
                     c.Telefone = ExtrairValorDoCampo("telefone", linha);
                     c.Cpf = ExtrairValorDoCampo("cpf", linha);
+                    c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", linha));
                     //c.Endereço = ExtrairValorDoCampo("endereço", linha);
                     //c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("dataNascimento", linha));
                     return c;
@@ -43,8 +44,8 @@ namespace RoleTopMVC.Repositories
             return null;
         }
         private string PrepararRegistroCSV(Cliente cliente)
-        {//"tipo_usuario={cliente.TipoUsuario};endereço={cliente.Endereço};
-            return $"nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone};cpf={cliente.Cpf}";
+        {//"endereço={cliente.Endereço};
+            return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};telefone={cliente.Telefone};cpf={cliente.Cpf}";
         }
         public string ExtrairValorDoCampo(string nomeCampo, string linha)
         {

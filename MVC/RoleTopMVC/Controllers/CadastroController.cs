@@ -36,7 +36,7 @@ namespace RoleTopMVC.Controllers
             catch (Exception e)
             {
                 //Retorna uma View Erro que na vdd é um File em View/Shared, que retorna uma msg de erro.
-                return View ("Erro",new RespostaViewModel());
+                return View ("Error",new RespostaViewModel());
             }
         }
     }

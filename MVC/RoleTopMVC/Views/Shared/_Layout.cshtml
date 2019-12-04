@@ -25,9 +25,16 @@
         <nav>
             <div class="logologin">
                 <img src="~/img/logo.png" title="logo">    
+                
                 <ul>
-                    <li> <a asp-controller="Login" asp-action="Index"> login </a></li>
-                    <hr />
+                    @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
+                    {
+                        <li> <a asp-controller="Login" asp-action="Index"> login </a></li>
+                    }
+                    else
+                    {
+                        <li> <a asp-controller="Login" asp-action="Logoff"> Logoff </a></li>
+                    }
                     <li> <a asp-controller="Cadastro" asp-action="Index"> cadastre-se </a></li>    
                 </ul>        
             </div>
