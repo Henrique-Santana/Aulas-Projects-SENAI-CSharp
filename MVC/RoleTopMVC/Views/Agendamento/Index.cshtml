@@ -14,28 +14,28 @@
         <div>
             <label for="telefone">Telefone para contato</label>
             <br />
-            <input id="telefone" type="text" />
+            <input id="telefone" type="text" maxlength="12" minlength="10" name="telefone"/>
         </div>
         <div>
             <label for="dia-do-evento">Dia do Evento</label>
             <br />
-            <input id="dia-do-evento" type="text" />
+            <input id="dia-do-evento" type="date" maxlength="12" minlength="10" name="data"/>
         </div>
         <div>
             <label for="email">E-mail</label>
             <br />
-            <input id="email" type="email" />
+            <input id="email" type="email" maxlength="20" minlength="8" name="email"/>
         </div>
         <div>
                 <label for="cpf">CPF</label>
                 <br />
-                <input id="cpf" type="text" />
+                <input id="cpf" type="text" maxlength="12" minlength="8" name="cpf" />
         </div>
         <div class="selecionaveis">
             <div>
                 <label for="modo-de-pagamento">Modo de Pagamento</label>
                 <br/>
-                <select id="modo-de-pagamento" required>
+                <select id="modo-de-pagamento" name="ModoPagamento" required>
                     <option value="" disabled selected>Selecione</option>
                     <option value="Depósito">Depósito</option>
                     <option value="Cartão">Cartão</option>
@@ -44,7 +44,7 @@
             <div>
                 <label for="tipo-de-evento">Tipo de Evento</label>
                 <br/>
-                <select id="tipo-de-evento">
+                <select id="tipo-de-evento" name="TipoEvento">
                     <option value="" disabled selected>Selecione</option>
                     <option>Casamento</option>
                     <option>Aniversario</option>
@@ -54,7 +54,7 @@
             <div>
                 <label for="opcionais">Opcionais</label>
                 <br/>
-                <select id="opcionais">
+                <select id="opcionais" name="Opcionais">
                     <option value="" disabled selected>Selecione</option>
                     <option>SOM</option>
                     <option>Iluminação</option>
