@@ -7,7 +7,7 @@ namespace McBonaldsMVC.Repositories
 {
     public class PedidoRepository : RepositoryBase
     {
-        private const string PATH = "Database/Pedido.csv";//PATH é uma constante, onde fica o csv, para clialo.
+        private const string PATH = "Database/Pedido.csv";//PATH é uma constante, onde fica o csv, para crialo.
 
         public PedidoRepository ()
             {
@@ -111,6 +111,5 @@ namespace McBonaldsMVC.Repositories
 
                 return $"id={pedido.Id};status_pedidos={pedido.Status};cliente_nome={cliente.Nome};cliente_endereço={cliente.Endereço};cliente_telefone={cliente.Telefone};cliente_email={cliente.Email};hamburguer_nome={hamburguer.Nome};hamburguer_preco={hamburguer.Preco};shake_nome={shake.Nome};shake_preco={shake.Preco};data_pedido={pedido.DatadoPedido};preco_total={pedido.PrecoTotal}";
             }
-            
     }
 }

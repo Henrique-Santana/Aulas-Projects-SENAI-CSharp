@@ -1,1 +1,3 @@
-tipo_usuario=1;nome=henriquebarreiro;email=henrique@email.com;senha=123123123;telefone=965432198;cpf=147147147147
+tipo_usuario=0;nome=henriquebarreiro;email=henrique@email.com;senha=123123123;telefone=965432198;cpf=147147147147
+tipo_usuario=0;nome=jorge;email=jorge@email.com;senha=321321321;telefone=965432198;cpf=4646464646
+tipo_usuario=0;nome=joaquim;email=joaquim@email.com;senha=789789789;telefone=965432198;cpf=546465456465

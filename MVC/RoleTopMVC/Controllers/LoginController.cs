@@ -11,7 +11,7 @@ namespace RoleTopMVC.Controllers
     {
 
         private ClienteRepository clienteRepository = new ClienteRepository();
-        //private PedidoRepository pedidoRepository = new PedidoRepository();
+        private AgendamentoRepository agendamentoRepository = new AgendamentoRepository();
         [HttpGet]
         public IActionResult Index()
         {
@@ -74,6 +74,19 @@ namespace RoleTopMVC.Controllers
                 System.Console.WriteLine(e.StackTrace);
                 return View("Error");
             }
+        }
+        public IActionResult Historico()
+        {
+            var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
+            var Agendamentos = agendamentoRepository.ObterTodosPorCliente(emailCliente);
+
+            return View(new HistoricoViewModel()
+            {
+                Agendamentos = Agendamentos,
+                NomeView = "Historico",
+                UsuarioNome = ObterUsuarioNomeSession(),
+                UsuarioEmail = ObterUsuarioSession()
+            });
         }
         public IActionResult Logoff()
         {

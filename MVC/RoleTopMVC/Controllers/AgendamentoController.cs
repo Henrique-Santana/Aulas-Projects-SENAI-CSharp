@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RoleTopMVC.Models;
@@ -10,6 +11,7 @@ namespace RoleTopMVC.Controllers
     {
         AgendamentoRepository agendamentoRepository = new AgendamentoRepository();
         ClienteRepository clienteRepository = new ClienteRepository();
+        Agendamento agendamento = new Agendamento();
         public IActionResult Index()
         {
             return View(new BaseViewModel()
@@ -22,12 +24,15 @@ namespace RoleTopMVC.Controllers
         public IActionResult Registrar(IFormCollection form)
 
         {
-            Agendamento agendamento = new Agendamento();
-                agendamento.Opcional1= form["opcional1"];
-                agendamento.Opcional2 = form ["opcional2"];
-                agendamento.Endereco = form ["endereco"];
-                agendamento.TipoPagamento = form ["modoPagamento"];
-                agendamento.TipoEvento = form ["tipoEvento"];
+            Evento evento = new Evento(){
+                
+                Opcional1= form["opcional1"],
+                Opcional2 = form ["opcional2"],
+                Endereco = form ["endereco"],
+                TipoPagamento = form ["tipoPagamento"],
+                TipoEvento = form ["tipoEvento"],
+                Data = DateTime.Parse(form ["data"])
+                };
 
             Cliente cliente = new Cliente()
             {
@@ -39,6 +44,8 @@ namespace RoleTopMVC.Controllers
             
 
             agendamento.cliente = cliente;
+            agendamento.DatadoPedido = DateTime.Now;
+            agendamento.evento = evento;
             
             if(agendamentoRepository.Inserir(agendamento))
             {
@@ -54,7 +61,7 @@ namespace RoleTopMVC.Controllers
             {
             return View("Erro", new RespostaViewModel()
             {
-                Mensagem = "Houve um erro ao processar seu pedido. tentefazer novamente",
+                Mensagem = "Houve um erro ao processar seu agendamento. tente novamente",
                 NomeView = "Erro",
                 UsuarioEmail = ObterUsuarioSession(),
                 UsuarioNome = ObterUsuarioNomeSession()

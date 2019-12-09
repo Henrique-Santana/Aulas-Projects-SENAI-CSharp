@@ -2976,6 +2976,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Login\\Historico.cshtml",
+      "TargetPath": "Views\\Login\\Historico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\47651807863\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
