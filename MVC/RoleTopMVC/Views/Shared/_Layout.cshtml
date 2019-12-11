@@ -8,8 +8,11 @@
         <link href= "~/img/logo.png" rel="icon" type="image">
         @if(!"Agendamento".Equals(@Model.NomeView))
         {
-        <link href="~/css/style.css" rel="stylesheet" >
-            
+            <link href="~/css/style.css" rel="stylesheet" >
+        }
+        @if("Dashboard".Equals(@Model.NomeView))
+        {
+            <link href="~/css/style.css" rel="stylesheet" >
         }
         @if(!"Home".Equals(@Model.NomeView))
         {
@@ -19,6 +22,7 @@
         {
             <link href="~/css/styleAGEN.css" rel="stylesheet" >
         }
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
     </head>
 <body>
     <header>

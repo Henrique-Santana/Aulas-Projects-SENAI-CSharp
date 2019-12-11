@@ -70,7 +70,7 @@ namespace McBonaldsMVC.Controllers
             }
             catch (Exception e)
             {
-                System.Console.WriteLine(e.StackTrace);
+                
                 return View("Erro");
             }
         }

@@ -49,7 +49,7 @@ namespace RoleTopMVC.Controllers
                             HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario); //SetString guarda uma string e armazena  na session email
                             HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
                             HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
-                            return RedirectToAction("Index", "Agendamento");
+                            return RedirectToAction("Historico", "Login");
 
                         default:
                             HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario); //SetString guarda uma string e armazena  na session email
@@ -77,7 +77,7 @@ namespace RoleTopMVC.Controllers
         }
         public IActionResult Historico()
         {
-            var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
+            var emailCliente = ObterUsuarioSession();
             var Agendamentos = agendamentoRepository.ObterTodosPorCliente(emailCliente);
 
             return View(new HistoricoViewModel()

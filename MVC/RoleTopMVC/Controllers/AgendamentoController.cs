@@ -1,6 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RoleTopMVC.Enums;
 using RoleTopMVC.Models;
 using RoleTopMVC.Repositories;
 using RoleTopMVC.ViewModels;
@@ -14,12 +15,18 @@ namespace RoleTopMVC.Controllers
         Agendamento agendamento = new Agendamento();
         public IActionResult Index()
         {
-            return View(new BaseViewModel()
+            var usuarioLogado = ObterUsuarioSession();
+
+            AgendamentoViewModel avm = new AgendamentoViewModel();
+
+            if (!string.IsNullOrEmpty(usuarioLogado))
             {
-                NomeView = "Agendamento",
-                UsuarioNome = ObterUsuarioNomeSession(),
-                UsuarioEmail = ObterUsuarioSession()
-            });
+                var clienteLogado = clienteRepository.ObterPor(usuarioLogado);
+
+                avm.UsuarioEmail = usuarioLogado;
+                avm.Cliente = clienteLogado;
+            }
+            return View(avm);
         }
         public IActionResult Registrar(IFormCollection form)
 
@@ -68,5 +75,45 @@ namespace RoleTopMVC.Controllers
             });
             }
         }
+        public IActionResult Aprovar(ulong id)
+    {
+        Agendamento agendamento = agendamentoRepository.ObterPor(id);
+        agendamento.Status = (uint) StatusPedidos.APROVADO;
+
+        if(agendamentoRepository.Atualizar(id,agendamento))
+        {
+            return RedirectToAction("Dashboard", "Administrador");
+        }
+        else
+        {
+            return View("Erro", new RespostaViewModel()
+            {
+                Mensagem = "Houve um erro ao aprovar pedido",
+                NomeView = "Dashboard",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
+        }
+    }
+    public IActionResult Reprovar(ulong id)
+    {
+        Agendamento agendamento = agendamentoRepository.ObterPor(id);
+        agendamento.Status = (uint) StatusPedidos.REPROVADO;
+
+        if(agendamentoRepository.Atualizar(id, agendamento))
+        {
+            return RedirectToAction("Dashboard", "Administrador");
+        }
+        else
+        {
+            return View("Erro", new RespostaViewModel()
+            {
+                Mensagem = "Houve um erro ao Reprovar pedido",
+                NomeView = "Dashboard",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
+        }
+    }
     }
 }

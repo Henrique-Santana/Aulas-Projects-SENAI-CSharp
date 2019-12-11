@@ -35,11 +35,11 @@ namespace RoleTopMVC.Repositories
                     agendamento.Id = ulong.Parse(ExtrairValorDoCampo("id", linha));
                     agendamento.Status = uint.Parse(ExtrairValorDoCampo("status_pedidos", linha));
                     agendamento.cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
-                    agendamento.evento.Endereco = ExtrairValorDoCampo("cliente_endereco", linha);
+                    agendamento.evento.Endereco = ExtrairValorDoCampo("evento_endereco", linha);
                     agendamento.cliente.Telefone = ExtrairValorDoCampo("cliente_telefone", linha);
                     agendamento.cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
                     agendamento.DatadoPedido = DateTime.Parse(ExtrairValorDoCampo("data_pedido", linha));
-                    agendamento.cliente.Cpf = ExtrairValorDoCampo("evento_cpf", linha);
+                    agendamento.cliente.Cpf = ExtrairValorDoCampo("cliente_cpf", linha);
                     agendamento.evento.Opcional1 = ExtrairValorDoCampo("evento_opcional1", linha);
                     agendamento.evento.Opcional2 = ExtrairValorDoCampo("evento_opcional2", linha); 
                     agendamento.evento.TipoEvento = ExtrairValorDoCampo("evento_tipoEvento", linha);
@@ -100,7 +100,7 @@ namespace RoleTopMVC.Repositories
                     File.WriteAllLines(PATH,agendamentosTotais);
                 }
 
-                return resultado;
+                return (resultado);
             }
             private string PrepararRegistroCSV(Agendamento agendamento)
             {

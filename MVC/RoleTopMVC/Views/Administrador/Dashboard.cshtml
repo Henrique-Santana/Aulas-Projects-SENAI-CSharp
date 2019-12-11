@@ -1,3 +1,4 @@
+@model RoleTopMVC.ViewModels.DashboardViewModel
 <main>
         <h2>Dashboard</h2>
         <section id="status-pedidos">
@@ -5,15 +6,15 @@
             <div id="painel">
                 <div class="box-status-pedidos aprovados">
                     <h4>Aprovados</h4>
-                    <p>3</p>
+                    <p>@Model.EventosAprovados</p>
                 </div>
                 <div class="box-status-pedidos pendentes">
                     <h4>Pendentes</h4>
-                    <p>3</p>
+                    <p>@Model.EventosPendentes</p>
                 </div>
                 <div class="box-status-pedidos reprovados">
                     <h4>Reprovados</h4>
-                    <p>3</p>
+                    <p>@Model.EventosReprovados</p>
                 </div>
             </div>
         </section>
@@ -25,35 +26,32 @@
                     <tr>
                         <th rowspan="2">Nome</th>
                         <th rowspan="2">Dia(s) do Evento</th>
-                        <th colspan="1">Tipo</th>
-                        <th colspan="1">Opcionais</th>
-                        <th colspan="1">Aprovar/Recusar</th>
+                        <th rowspan="2">Tipo</th>
+                        <th rowspan="2">Opcional 1</th>
+                        <th rowspan="2">Opcional 2</th>
+                        <th colspan="2" rowspan="2">Aprovar/Recusar</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
                         <td colspan="6">
-                            <p>Pedidos atualizados em 04/09/2019 às 7:41</p>
+                            <p>Pedidos atualizados em @DateTime.Now</p>
                         </td>
                     </tr>
                 </tfoot>
                 <tbody>
-                    <tr>
-                        <td>Cesar Sportore</td>
-                        <td>12/12/1200</td>
-                        <td>Casamento</td>
-                        <td>SOM & ULIMINAÇÕES</td>
-                        <td><a href="#"><i class="fas fa-check"></i></a></td>
-                        <td><a href="#"><i class="fas fa-times"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>Alexandre Fukaya</td>
-                        <td>13-14-15/12/1200</td>
-                        <td>Showl</td>
-                        <td>X</td>
-                        <td><a href="#"><i class="fas fa-check"></i></a></td>
-                        <td><a href="#"><i class="fas fa-times"></i></a></td>
-                    </tr>
+                    @foreach(var evento in Model.Agendamento){
+                        <tr>
+                            <td>@evento.cliente.Nome</td>
+                            <td>@evento.evento.Data</td>
+                            <td>@evento.evento.TipoEvento</td>
+                            <td>@evento.evento.Opcional1</td>
+                            <td>@evento.evento.Opcional2</td>
+                            <td><a href='@Url.Action("Aprovar", "Agendamento", new {id = @evento.Id})'><i class="fas fa-check"></i></a></td>
+                            <td><a href='@Url.Action("Reprovar", "Agendamento", new {id = @evento.Id})'><i class="fas fa-times"></i></a></td>
+                        </tr>
+                    }
+
                 </tbody>
             </table>
         </section>
