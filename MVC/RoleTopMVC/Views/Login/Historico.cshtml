@@ -13,6 +13,8 @@
                 <th>TipodoEvento</th>
                 <th>Dia</th>
                 <th>Preço</th>
+                <th>Status</th>
+
             </tr>
         </thead>
         <tbody>
@@ -22,6 +24,14 @@
                     <td>@agendamento.evento.TipoEvento</td>
                     <td>@agendamento.evento.Data</td>
                     <td>@agendamento.PrecoTotal</td>
+                    @if(@agendamento.Status == 0)
+                    {
+                    <td>Seu agendamento esta em analise</td>
+                    } else if(@agendamento.Status == 1){
+                        <td> Aprovado </td>
+                    } else if(@agendamento.Status == 2){
+                        <td> Reprovado </td>
+                    }
                 </tr>
             }
         </tbody>

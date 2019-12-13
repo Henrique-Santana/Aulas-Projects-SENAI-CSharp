@@ -25,8 +25,13 @@ namespace RoleTopMVC.Controllers
 
                 avm.UsuarioEmail = usuarioLogado;
                 avm.Cliente = clienteLogado;
+                
+                return View(avm);
             }
-            return View(avm);
+            return View("Error", new RespostaViewModel(){
+                Mensagem = "É necessário estar logado para realizar um agendamento, realize um cadastro caso não tenha uma conta",
+                
+            });
         }
         public IActionResult Registrar(IFormCollection form)
 
@@ -66,7 +71,7 @@ namespace RoleTopMVC.Controllers
             }
             else
             {
-            return View("Erro", new RespostaViewModel()
+            return View("Error", new RespostaViewModel()
             {
                 Mensagem = "Houve um erro ao processar seu agendamento. tente novamente",
                 NomeView = "Erro",
@@ -86,7 +91,7 @@ namespace RoleTopMVC.Controllers
         }
         else
         {
-            return View("Erro", new RespostaViewModel()
+            return View("Error", new RespostaViewModel()
             {
                 Mensagem = "Houve um erro ao aprovar pedido",
                 NomeView = "Dashboard",
@@ -106,7 +111,7 @@ namespace RoleTopMVC.Controllers
         }
         else
         {
-            return View("Erro", new RespostaViewModel()
+            return View("Error", new RespostaViewModel()
             {
                 Mensagem = "Houve um erro ao Reprovar pedido",
                 NomeView = "Dashboard",

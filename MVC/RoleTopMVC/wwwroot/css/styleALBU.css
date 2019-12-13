@@ -120,7 +120,8 @@ footer{
 }
 p{
     text-align: center;
-    font-size: bold;
+    font-size: 200%;
+    margin: 3em;
 }
 .aniversarios {
     display: flex;
